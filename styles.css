@@ -1,0 +1,34 @@
+body, div#logo-container {
+    display: flex;
+}
+
+div#left {
+    width: 40vw;
+    position: relative;
+}
+
+div#right {
+    width: 60vw;
+}
+
+img#sidebar-image {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    z-index: -1;
+}
+
+div#logo-container {
+    position: absolute;
+    width: 100%;
+    height: 20%;
+}
+
+p#photo-credit {
+    position: absolute;
+}
+
+img#logo {
+    height: 100%;
+    width: auto;
+}
