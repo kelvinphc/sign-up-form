@@ -4,6 +4,9 @@ body, html {
     padding: 0;
 }
 
+a:visited {
+    color: inherit;
+}
 body, div#logo-container {
     display: flex;
 }
@@ -36,6 +39,12 @@ div#logo-container {
 
 p#photo-credit {
     position: absolute;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1vw;
+    color: white;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 img#logo {
