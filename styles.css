@@ -15,7 +15,6 @@ a:visited {
 
 body, div#logo-container {
     display: flex;
-    
 }
 
 div#right, div#hero, form, div.input {
@@ -118,6 +117,7 @@ form {
 div#button-container {
     background-color: #f9fafb;
     flex: 1;
+    padding: 2.5rem 0 0 3rem;
 }
 
 div#hero p {
@@ -160,4 +160,35 @@ input:focus {
     outline: none;
     border-color: #527bd7;
     box-shadow: 2px 2px 5px 0 rgb( 0 0 0 / 30%);
+}
+
+button {
+    width: 240px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px 0 rgb( 0 0 0 / 30%);
+    background-color: #596D48;
+    color: white;
+    font-size: 1.2rem;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #475739;
+}
+
+div#button-container p {
+    margin-top: 3rem;
+    font-size: 1.2rem;
+}
+
+a#log-in {
+    text-decoration: none;
+    font-weight: bold;
+    color: #596D48;
+}
+
+a#log-in:hover {
+    color: #5c486d;
 }
