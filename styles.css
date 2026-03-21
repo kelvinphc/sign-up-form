@@ -15,6 +15,12 @@ a:visited {
 
 body, div#logo-container {
     display: flex;
+    
+}
+
+div#right, div#hero, form, div.input {
+    display: flex;
+    flex-direction: column;
 }
 
 div#left {
@@ -24,12 +30,11 @@ div#left {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    min-width: 0;
 }
 
 div#right {
     flex: 62.5;
-    display: flex;
-    flex-direction: column;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -48,6 +53,7 @@ div#logo-container {
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
 div#left p {
@@ -63,7 +69,7 @@ div#left p {
     width: max(100%, 240px);
 }
 
-img#logo {
+div#logo-container img {
     width: clamp(3rem, 7vw, 7.5rem);
     height: auto;
     margin: 0.7rem 0 0.7rem 0;
@@ -87,7 +93,7 @@ img#logo {
     font-style: normal;
 }
 
-h1#logo-text {
+div#logo-container h1 {
     color: white;
     font-family: "Norse";
     font-size: clamp(3rem, 7vw, 7.5rem);
@@ -97,16 +103,16 @@ h1#logo-text {
 div#hero {
     background-color: #f9fafb;
     flex: 1;
-    display: flex;
-    flex-direction: column;
 }
 
-div#form-container {
+form {
     background-color: #ffffff;
     flex: 0;
     box-shadow: 0 0.3rem 0.3rem 0 rgb( 0 0 0 / 15%);
     position: relative;
     z-index: 1;
+    gap: 1.5rem;
+    padding: 1rem 3rem 2.5rem 3rem;
 }
 
 div#button-container {
@@ -116,7 +122,42 @@ div#button-container {
 
 div#hero p {
     width: min(75ch, 75%);
-    margin: auto 3rem 5rem 3rem;
+    margin: auto 3rem 4rem 3rem;
     font-size: 1.5rem;
     font-weight: 550;
+}
+
+div.form-row {
+    display: flex;
+    gap: clamp(3rem, 5vw, 4rem);
+}
+
+form p {
+    font-size: 1.5rem;
+    font-weight: 550;
+    margin: 0;
+}
+
+input, button {
+    font-family: inherit;
+    font-size: 100%;
+}
+
+label {
+    font-size: 0.75rem;
+    letter-spacing: 2px;
+    margin-bottom: 2px;
+}
+
+input {
+    height: 30px;
+    width: clamp(165px, 25vw, 260px);
+    border: 1px solid #E5E7EB;
+    border-radius: 5px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #527bd7;
+    box-shadow: 2px 2px 5px 0 rgb( 0 0 0 / 30%);
 }

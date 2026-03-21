@@ -25,29 +25,44 @@
                 You <em>know</em> you want to.
             </p>
         </div>
-        <div class="container" id="form-container">
+        <form action="" method="post" name="sign-up-form">
             <p>Let's do this!</p>
 
-            <form action="" method="post" name="sign-up-form">
-                <label for="user-first-name">FIRST NAME</label>
-                <input type="text" id="user-first-name" name="user-first-name">
-
-                <label for="user-last-name">LAST NAME</label>
-                <input type="text" id="user-last-name" name="user-last-name">
+            <div class="form-row">
+                <div class="input" id="first-name">
+                    <label for="user-first-name">FIRST NAME</label>
+                    <input type="text" id="user-first-name" name="user-first-name">
+                </div>
+                <div class="input" id="last-name">
+                    <label for="user-last-name">LAST NAME</label>
+                    <input type="text" id="user-last-name" name="user-last-name">
+                </div>
+            </div>
+            
+            <div class="form-row">
+                <div class="input" id="email">
+                    <label for="user-email">EMAIL</label>
+                    <input type="email" id="user-email" name="user-email">
+                </div>
                 
-                <label for="email">EMAIL</label>
-                <input type="email" id="email" name="email">
+                <div class="input" id="phone-number">
+                    <label for="user-phone-number">PHONE NUMBER</label>
+                    <input type="tel" id="user-phone-number" name="user-phone-number">
+                </div>
+            </div>
+            
+            <div class="form-row">
+                <div class="input" id="password">
+                    <label for="user-password">PASSWORD</label>
+                    <input type="password" id="user-password" name="user-password">
+                </div>
                 
-                <label for="user-phone-number">PHONE NUMBER</label>
-                <input type="tel" id="user-phone-number" name="user-phone-number">
-                
-                <label for="user-password">PASSWORD</label>
-                <input type="password" id="user-password" name="user-password">
-                
-                <label for="user-confirm-password">CONFIRM PASSWORD</label>
-                <input type="password" id="user-confirm-password" name="user-confirm-password">
-            </form>
-        </div>
+                <div class="input" id="confirm-password">
+                    <label for="user-confirm-password">CONFIRM PASSWORD</label>
+                    <input type="password" id="user-confirm-password" name="user-confirm-password">
+                </div>
+            </div>
+        </form>
         <div class="container" id="button-container">
             <button type="submit" form="sign-up-form">Create Account</button>
 
