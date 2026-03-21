@@ -18,7 +18,7 @@ body, div#logo-container {
 }
 
 div#left {
-    width: 37.5%;
+    flex: 37.5;
     position: relative;
     background-image: url(./halie-west-25xggax4bSA-unsplash.jpg);
     background-position: center;
@@ -27,7 +27,7 @@ div#left {
 }
 
 div#right {
-    width: 60vw;
+    flex: 62.5;
 }
 
 img#sidebar-image {
@@ -88,4 +88,12 @@ h1#logo-text {
     font-family: "Norse";
     font-size: clamp(3rem, 7vw, 7.5rem);
     margin: 0;
+}
+
+div#hero {
+    background-color: #f9fafb;
+}
+
+div#button-container {
+    background-color: #f9fafb;
 }
