@@ -154,6 +154,12 @@ input {
     width: clamp(165px, 25vw, 260px);
     border: 1px solid #E5E7EB;
     border-radius: 5px;
+    padding-left: 10px;
+}
+
+input:user-invalid {
+    outline: none;
+    border-color: red;
 }
 
 input:focus {
